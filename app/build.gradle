@@ -1,0 +1,204 @@
+import com.github.triplet.gradle.androidpublisher.ReleaseStatus
+
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.devtools.ksp'
+    id 'dagger.hilt.android.plugin'
+    id 'com.github.triplet.play' version "${playPublisherVersion}"
+    id 'org.jetbrains.kotlin.plugin.compose'
+    // for spek
+    // junit5 doesn't support android projects out of the box
+    id 'de.mannodermaus.android-junit5'
+}
+
+ext {
+    isCi = System.getenv("CI") == "true"
+}
+
+android {
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        compileSdk rootProject.ext.targetSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        vectorDrawables.useSupportLibrary = true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments runnerBuilder: 'de.mannodermaus.junit5.AndroidJUnit5Builder'
+
+        manifestPlaceholders = [isCi: String.valueOf(isCi)]
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            zipAlignEnabled true
+        }
+        release {
+            debuggable false
+            zipAlignEnabled true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+    flavorDimensions "default"
+    productFlavors {
+        development {
+            dimension "default"
+            resValue "string", "app_name", "dev"
+            applicationIdSuffix ".dev"
+            versionNameSuffix ".dev"
+            buildConfigField "String", "API_HOST", "\"https://supabase.akihito-okada.workers.dev/rest/\""
+            buildConfigField "boolean", "IS_CI", "$isCi"
+        }
+        staging {
+            dimension "default"
+            resValue "string", "app_name", "staging"
+            versionNameSuffix ".staging"
+            buildConfigField "String", "API_HOST", "\"https://supabase.akihito-okada.workers.dev/rest/\""
+            buildConfigField "boolean", "IS_CI", "$isCi"
+        }
+        production {
+            dimension "default"
+            resValue "string", "app_name", "production"
+            buildConfigField "String", "API_HOST", "\"https://supabase.akihito-okada.workers.dev/rest/\""
+            buildConfigField "boolean", "IS_CI", "$isCi"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildFeatures {
+        viewBinding true
+        compose true
+    }
+    testOptions {
+        junitPlatform {
+            filters {
+                engines {
+                    include 'spek2'
+                }
+            }
+            jacocoOptions {
+                html.enabled = true
+                xml.enabled = false
+                csv.enabled = false
+            }
+            unitTests.all {
+                testLogging.events = ["passed", "skipped", "failed"]
+            }
+            // Don't raise errors about incorrect configuration
+            // of JUnit 5 instrumentation tests
+            instrumentationTests {
+                integrityCheckEnabled = false
+            }
+        }
+    }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    packagingOptions {
+        resources {
+            excludes += [
+                'project.properties',
+                'META-INF/gradle/incremental.annotation.processors',
+                'META-INF/INDEX.LIST',
+                'META-INF/DEPENDENCIES']
+        }
+    }
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+    lint {
+        abortOnError false
+        checkTestSources true
+        xmlReport true
+    }
+    namespace 'com.example.flux'
+}
+
+play {
+    track.set("internal")
+    userFraction.set(1.0d)
+    serviceAccountCredentials.set(file("play_publisher.json"))
+    releaseStatus.set(ReleaseStatus.COMPLETED)
+}
+
+dependencies {
+    implementation project(path: ':shared')
+    implementation project(path: ':model')
+    implementation project(path: ':data:preferences')
+    implementation project(path: ':data:remote')
+    implementation project(path: ':data:repository')
+    implementation project(path: ":feature:common")
+    implementation project(path: ":feature:store")
+    implementation project(path: ':feature:toys')
+
+    // kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+
+    // androidx
+    implementation "androidx.appcompat:appcompat:$appcompatVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "androidx.core:core-ktx:$coreKtxVersion"
+    implementation "androidx.activity:activity-ktx:$activityKtxVersion"
+    implementation "androidx.fragment:fragment-ktx:$fragmentKtxVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycleViewmodelSavedstateVersion"
+
+    // material
+    implementation "com.google.android.material:material:$materialVersion"
+
+    // compose
+    implementation(platform("androidx.compose:compose-bom:$composeBomVersion"))
+    implementation("androidx.compose.runtime:runtime")
+
+    // di
+    implementation "com.google.dagger:hilt-android:$hiltAndroidVersion"
+    implementation "androidx.browser:browser:$browserVersion"
+    ksp "com.google.dagger:hilt-android-compiler:$hiltAndroidVersion"
+    implementation "androidx.hilt:hilt-common:$hiltVersion"
+    ksp "androidx.hilt:hilt-compiler:$hiltVersion"
+
+    implementation "com.github.lisawray.groupie:groupie:$groupieVersion"
+    implementation "com.github.lisawray.groupie:groupie-viewbinding:$groupieVersion"
+
+    // image
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    ksp "com.github.bumptech.glide:ksp:$glideVersion"
+    implementation "com.github.bumptech.glide:okhttp3-integration:$glideVersion"
+    implementation "jp.wasabeef:glide-transformations:$glideTransformationsVersion"
+    implementation "jp.co.cyberagent.android:gpuimage:$gpuimageVersion"
+    implementation "io.coil-kt:coil:$coilVersion"
+    implementation "io.coil-kt:coil-svg:$coilVersion"
+    implementation "io.coil-kt:coil-gif:$coilVersion"
+
+    // util
+    implementation "com.jakewharton.timber:timber:$timberVersion"
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakcanaryVersion"
+
+    // test
+    androidTestImplementation "androidx.test:runner:$atslRunnerVersion"
+    androidTestRuntimeOnly "de.mannodermaus.junit5:android-test-runner:$junit5RunnerVersion"
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.1'
+
+    testImplementation "org.jetbrains.kotlin:kotlin-test:$kotlinVersion"
+    testImplementation "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion"
+
+    testImplementation "org.spekframework.spek2:spek-dsl-jvm:$spekVersion"
+    testRuntimeOnly "org.spekframework.spek2:spek-runner-junit5:$spekVersion"
+
+    testImplementation "androidx.arch.core:core-testing:$archCoreTestingVersion"
+
+    testImplementation "io.mockk:mockk:$mockkVersion"
+    testImplementation "io.mockk:mockk-agent-jvm:$mockkVersion"
+    testImplementation "org.assertj:assertj-core:$assertjVersion"
+}

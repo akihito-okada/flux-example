@@ -1,0 +1,103 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'com.google.devtools.ksp'
+    id 'dagger.hilt.android.plugin'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+
+android {
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        compileSdk rootProject.ext.targetSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+
+    buildFeatures {
+        viewBinding true
+        compose true
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    lint {
+        abortOnError false
+        checkTestSources true
+        xmlReport true
+    }
+    namespace 'com.example.flux.works'
+}
+
+dependencies {
+    implementation project(path: ':shared')
+    implementation project(path: ':model')
+    implementation project(path: ':data:repository')
+    implementation project(path: ":feature:common")
+
+    // kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+
+    // androidx
+    implementation "androidx.appcompat:appcompat:$appcompatVersion"
+    implementation "androidx.recyclerview:recyclerview:$recyclerViewVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "com.google.android.material:material:$materialVersion"
+    implementation "androidx.core:core-ktx:$coreKtxVersion"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:$swipeRefreshLayoutVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
+    implementation "androidx.fragment:fragment-ktx:$fragmentKtxVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycleViewmodelSavedstateVersion"
+
+    // Compose
+    implementation(platform("androidx.compose:compose-bom:$composeBomVersion"))
+    implementation("androidx.compose.runtime:runtime")
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-tooling")
+    implementation("androidx.compose.foundation:foundation")
+    implementation("androidx.compose.material:material")
+    implementation("androidx.compose.material:material-icons-core")
+    implementation("androidx.compose.runtime:runtime-livedata")
+    implementation "androidx.constraintlayout:constraintlayout-compose:$composeConstraintLayoutVersion"
+    implementation "com.google.accompanist:accompanist-swiperefresh:$accompanistVersion"
+
+    implementation "io.coil-kt:coil:$coilVersion"
+    implementation "io.coil-kt:coil-compose:$coilVersion"
+
+    // di
+    implementation "com.google.dagger:hilt-android:$hiltAndroidVersion"
+    ksp "com.google.dagger:hilt-android-compiler:$hiltAndroidVersion"
+    implementation "androidx.hilt:hilt-common:$hiltVersion"
+    ksp "androidx.hilt:hilt-compiler:$hiltVersion"
+
+    implementation "com.github.lisawray.groupie:groupie:$groupieVersion"
+    implementation "com.github.lisawray.groupie:groupie-viewbinding:$groupieVersion"
+
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    ksp "com.github.bumptech.glide:ksp:$glideVersion"
+    implementation "com.github.bumptech.glide:okhttp3-integration:$glideVersion"
+    implementation "jp.wasabeef:glide-transformations:$glideTransformationsVersion"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    // util
+    implementation "com.jakewharton.timber:timber:$timberVersion"
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="VimeoPlayerView">
+        <attr name="autoPlay" format="boolean" />
+        <attr name="loop" format="boolean" />
+        <attr name="muted" format="boolean" />
+        <attr name="topicColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="showOriginalControls" format="boolean" />
+        <attr name="showTitle" format="boolean" />
+        <attr name="showFullscreenOption" format="boolean" />
+        <attr name="aspectRatio" format="float" />
+        <attr name="quality" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeView">
+        <attr name="speed" format="dimension" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="text_spacing" format="dimension" />
+        <attr name="text_radius" format="float" />
+        <attr name="text_dx" format="float" />
+        <attr name="text_dy" format="float" />
+        <attr name="text_shadowColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ShapeRipple">
+        <attr name="ripple_color" format="color" />
+        <attr name="enable_single_ripple" format="boolean" />
+        <attr name="ripple_duration" format="integer" />
+        <attr name="enable_color_transition" format="boolean" />
+        <attr name="enable_random_position" format="boolean" />
+        <attr name="enable_random_color" format="boolean" />
+        <attr name="enable_stroke_style" format="boolean" />
+        <attr name="ripple_from_color" format="color" />
+        <attr name="ripple_to_color" format="color" />
+        <attr name="ripple_stroke_width" format="dimension" />
+        <attr name="ripple_maximum_radius" format="dimension" />
+        <attr name="ripple_count" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TranslatableTextView">
+        <attr name="text_appearance" format="reference" />
+        <attr name="translated_text_appearance" format="reference" />
+        <attr name="translate_button_margin_top" format="dimension" />
+        <attr name="translated_text_margin_top" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TranslatableEllipsizeTextView">
+        <attr name="ellipsize_max_lines" format="integer" />
+        <attr name="ellipsize_text_appearance" format="reference" />
+        <attr name="ellipsize_translated_text_appearance" format="reference" />
+        <attr name="ellipsize_translate_button_margin_top" format="dimension" />
+        <attr name="ellipsize_translated_text_margin_top" format="dimension" />
+    </declare-styleable>
+</resources>

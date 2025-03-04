@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">@color/black_01dp</color>
+    <color name="color_primary_dark">@color/white</color>
+    <color name="color_accent">@color/gray_cccccc</color>
+
+    <color name="text_color">@color/white</color>
+    <color name="text_color_primary">@color/white</color>
+    <color name="text_color_reverse">@color/black</color>
+    <color name="text_color_secondary">@color/white</color>
+    <color name="text_color_accent">@color/gray_cccccc</color>
+    <color name="text_color_accent_dark">@color/gray_cccccc</color>
+    <color name="text_color_light">@color/white_30percent</color>
+    <color name="text_color_description">@color/gray_cccccc</color>
+    <color name="text_color_sticker_black">@color/gray_cccccc</color>
+    <color name="text_color_event_term_coming_soon">@color/gray_888888</color>
+    <color name="text_color_follow_off">@color/black</color>
+    <color name="text_color_follow_on">@color/text_color_accent</color>
+    <color name="text_color_ticket_term">@color/red_ff4f59</color>
+    <color name="text_color_event_term_ended">@color/gray_cccccc</color>
+
+    <color name="color_border">@color/black_12dp</color>
+    <color name="color_border_dialog">@color/black_16dp</color>
+    <color name="color_card_background">@color/black_01dp</color>
+    <color name="color_card_layout">@color/black_03dp</color>
+    <color name="color_card_layout_dark">@color/black_03dp</color>
+    <color name="color_card_layout_filled">@color/color_card_layout</color>
+    <color name="color_card_overlay_layout">@color/black_04dp</color>
+    <color name="color_card_overlay_layout_dark">@color/black_04dp</color>
+    <color name="color_card_layout_unread">@color/black_08dp</color>
+    <color name="color_card_stamp_rally">@color/gray_eeeeee</color>
+    <color name="color_button_surface_dark">@color/white</color>
+    <color name="color_fab_layout">@color/black_06dp</color>
+    <color name="color_fab_layout_dark">@color/black_06dp</color>
+    <color name="color_app_bar_layout">@color/black_04dp</color>
+    <color name="color_tab_layout">@color/black_04dp</color>
+    <color name="color_bottom_navigation_view">@color/black_08dp</color>
+    <color name="color_dialog">@color/black_24dp</color>
+    <color name="color_dialog_dark">@color/black_24dp</color>
+
+    <color name="color_follow_off_background">@color/white</color>
+    <color name="color_follow_on_background">@color/black_01dp</color>
+    <color name="color_horizontal_sticker_view_base">@color/black_05dp</color>
+    <color name="color_artist_detail_background">@color/black_01dp</color>
+    <color name="color_editor_background">@color/black_01dp</color>
+    <color name="color_player_collapsed_background">@color/black_08dp</color>
+    <color name="color_audio_guide_card_background">@color/black_01dp</color>
+
+    <color name="color_ripple_primary">@color/white</color>
+    <color name="color_ripple_secondary">@color/gray_888888</color>
+</resources>

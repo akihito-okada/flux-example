@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" translatable="false" tools:ignore="MissingTranslation">
+    <string name="app_name" translatable="false">FluxExample</string>
+    <string name="blank" />
+    <string name="price_format">¥%,d</string>
+    <string name="price_range_label">%s ー %s</string>
+    <string name="price_range_divider">ー</string>
+    <string name="braces_format">(%s)</string>
+    <string name="braces_format_with_space">( %s )</string>
+
+    <!-- Screen Event ここから -->
+    <string name="title_screen_root">Root</string>
+    <string name="title_screen_toy_store">ToyStore</string>
+    <string name="title_screen_toy_detail">ToyDetail</string>
+    <!-- Screen Event ここまで -->
+</resources>

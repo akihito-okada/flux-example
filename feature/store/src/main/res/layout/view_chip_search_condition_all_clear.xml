@@ -1,0 +1,10 @@
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chip"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:textAppearance="@style/TextAppearance.App.Subtitle3.Sp"
+    app:chipBackgroundColor="?attr/colorCardLayoutFilled"
+    app:chipCornerRadius="3dp"
+    app:chipMinTouchTargetSize="0dp"
+    app:rippleColor="?attr/colorRipplePrimary" />

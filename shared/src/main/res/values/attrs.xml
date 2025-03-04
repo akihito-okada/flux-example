@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="windowLightStatusBarForAppTheme" format="boolean" />
+    <attr name="windowLightNavigationBarForAppTheme" format="boolean" />
+
+    <attr name="colorControlNormal" format="color" />
+
+    <attr name="textColor" format="color" />
+    <attr name="textColorPrimary" format="color" />
+    <attr name="textColorReverse" format="color" />
+    <attr name="textColorSecondary" format="color" />
+    <attr name="textColorAccent" format="color" />
+    <attr name="textColorAccentDark" format="color" />
+    <attr name="textColorLight" format="color" />
+    <attr name="textColorDescription" format="color" />
+    <attr name="textColorStickerBlack" format="color" />
+    <attr name="textColorEventTermComingSoon" format="color" />
+    <attr name="textColorEventTermEnded" format="color" />
+    <attr name="textColorFollowOff" format="color" />
+    <attr name="textColorFollowOn" format="color" />
+    <attr name="textColorTicketTerm" format="color" />
+    <attr name="textColorEmphasized" format="color" />
+    <attr name="textColorCaution" format="color" />
+    <attr name="textColorPrimaryStampRally" format="color" />
+
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorPrimaryDark" format="color" />
+
+    <attr name="colorBorder" format="color" />
+    <attr name="colorBorderDialog" format="color" />
+
+    <attr name="colorCardBackground" format="color" />
+    <attr name="colorCardLayout" format="color" />
+    <attr name="colorCardLayoutDark" format="color" />
+    <attr name="colorCardLayoutFilled" format="color" />
+    <attr name="colorCardOverlayLayout" format="color" />
+    <attr name="colorCardOverlayLayoutDark" format="color" />
+    <attr name="colorCardLayoutUnread" format="color" />
+    <attr name="colorCardLayoutStampRally" format="color" />
+    <attr name="colorButtonSurfaceDark" format="color" />
+    <attr name="colorFabLayout" format="color" />
+    <attr name="colorFabLayoutDark" format="color" />
+    <attr name="colorAppBarLayout" format="color" />
+    <attr name="colorTabLayout" format="color" />
+    <attr name="colorBottomNavigationView" format="color" />
+    <attr name="colorDialog" format="color" />
+    <attr name="colorDialogDark" format="color" />
+    <attr name="colorFollowOffBackground" format="color" />
+    <attr name="colorFollowOnBackground" format="color" />
+    <attr name="colorHorizontalStickerViewBase" format="color" />
+    <attr name="colorArtistDetailBackground" format="color" />
+    <attr name="colorEditorBackground" format="color" />
+    <attr name="colorPlayerCollapsedBackground" format="color" />
+    <attr name="colorAudioGuideCardBackground" format="color" />
+    <attr name="colorRipplePrimary" format="color" />
+    <attr name="colorRippleSecondary" format="color" />
+
+    // New Refactored Colors
+    <attr name="colorAttentionInfo" format="color" />
+    <attr name="colorOnAttentionInfo" format="color" />
+    <attr name="colorAttentionSuccess" format="color" />
+    <attr name="colorOnAttentionSuccess" format="color" />
+    <attr name="colorOnSurfaceDeep" format="color" />
+</resources>

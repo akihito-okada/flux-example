@@ -1,0 +1,144 @@
+import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+
+    ext {
+        // Load the version.properties file
+        def versionPropsFile = file('version.properties')
+        Properties versionProps = new Properties()
+        if (versionPropsFile.exists()) {
+            versionProps.load(new FileInputStream(versionPropsFile))
+            println "Loaded properties from version.properties: $versionProps"
+        } else {
+            println "version.properties does not exist!"
+        }
+
+        applicationId = 'com.example.flux'
+
+        targetSdkVersion = 35
+        minSdkVersion = 26
+
+        versionCode = (versionProps['VERSION_CODE'] ?: "1").toInteger()
+        versionName = '4.23.0'
+
+        kotlinVersion = '2.1.10'
+        coroutinesVersion = '1.10.1'
+        androidGradlePluginVersion = '8.7.3'
+        googleServicesVersion = '4.4.0'
+
+        appcompatVersion = '1.7.0'
+        annotationVersion = '1.9.1'
+        recyclerViewVersion = '1.4.0'
+        swipeRefreshLayoutVersion = '1.1.0'
+        preferenceVersion = '1.2.1'
+        constraintLayoutVersion = '2.2.1'
+        roomVersion = '2.6.1'
+        lifecycleVersion = '2.8.7'
+        lifecycleExtensionsVersion = '2.2.0'
+        archCoreVersion = '2.0.0'
+        billingclientVersion = '7.1.1'
+        coreKtxVersion = '1.15.0'
+        materialVersion = '1.12.0'
+        composeBomVersion = '2025.02.00'
+        accompanistVersion = '0.36.0'
+        composeConstraintLayoutVersion = '1.1.1'
+        activityKtxVersion = '1.10.1'
+        fragmentKtxVersion = '1.8.6'
+        lifecycleViewmodelSavedstateVersion = '2.8.7'
+
+        // network
+        okhttp3Version = '5.0.0-alpha.14'
+        retrofitVersion = '2.11.0'
+        gsonVersion = '2.12.1'
+        browserVersion = '1.8.0'
+
+        // di
+        hiltVersion = '1.2.0'
+        hiltAndroidVersion = '2.55'
+
+        // layout, view
+        groupieVersion = '2.10.1'
+
+        // image
+        glideVersion = '4.16.0'
+        glideTransformationsVersion = '4.3.0'
+        gpuimageVersion = '2.1.0'
+        lottieVersion = '6.6.2'
+        coilVersion = '2.7.0'
+
+        channelIoVersion = '12.6.0'
+
+        // utils
+        timberVersion = '5.0.1'
+        leakcanaryVersion = '2.14'
+        playPublisherVersion = '3.8.6'
+        ktlintGradleVersion = '12.0.3'
+        unusedResourcesRemoverVersion = '0.3.3'
+
+        // test
+        junitVersion = '4.13.2'
+        atslRunnerVersion = '1.6.2'
+        espressoVersion = '3.3.0-alpha01'
+        androidJunit5Version = '1.10.0.0'
+        junit5RunnerVersion = '1.7.0'
+        spekVersion = '2.0.19'
+        mockkVersion = '1.13.17'
+        archCoreTestingVersion = '2.2.0'
+        robolectricVersion = '4.11.1'
+        assertjVersion = '3.27.3'
+    }
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://www.jitpack.io" }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$androidGradlePluginVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "org.jlleitschuh.gradle:ktlint-gradle:$ktlintGradleVersion"
+        classpath "de.mannodermaus.gradle.plugins:android-junit5:$androidJunit5Version"
+        classpath "gradle.plugin.com.github.konifar.gradle:plugin:$unusedResourcesRemoverVersion"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltAndroidVersion"
+    }
+}
+
+plugins {
+    id 'com.google.devtools.ksp' version '2.1.10-1.0.31' apply false
+    id("org.jetbrains.kotlin.plugin.compose") version "2.1.10" apply false
+}
+
+subprojects {
+    apply plugin: "org.jlleitschuh.gradle.ktlint"
+    apply plugin: "com.github.konifar.gradle.unused-resources-remover"
+
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.google.com/' }
+        // For Scrolling Image View
+        maven { url "https://www.jitpack.io" }
+    }
+
+    ktlint {
+        version.set("0.48.0")
+        android.set(true)
+        reporters {
+            reporter ReporterType.CHECKSTYLE
+        }
+        ignoreFailures.set(true)
+    }
+
+    unusedResourcesRemover {
+        excludeNames = [
+            "strings.xml",
+            "strings_no_trans.xml",
+            "colors.xml"
+        ]
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}

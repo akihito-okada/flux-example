@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="App.Widget.Work.BottomKeepLayout" parent="">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">-4dp</item>
+        <item name="android:titleMarginStart">10dp</item>
+    </style>
+
+    <style name="App.Widget.Work.KeepButton" parent="">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:foreground">@drawable/shape_ripple_primary_oval</item>
+        <item name="srcCompat">@drawable/ic_reaction_unset_black_30dp</item>
+    </style>
+
+    <style name="App.Widget.PurchasableWorks.Header.Button" parent="@style/TextAppearance.App.Caption">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+
+    <style name="App.Widget.Works.RecyclerView" parent="App.Widget.RecyclerView">
+        <item name="android:paddingHorizontal">8dp</item>
+        <item name="android:paddingBottom">71dp</item>
+    </style>
+
+    <style name="App.Widget.WorkSmall.WorkPriceLabel" parent="@style/TextAppearance.App.Subtitle3">
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="App.Widget.WorkSmall.WorkArtistName" parent="@style/TextAppearance.App.Caption1.Accent">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="App.Widget.WorkSmall.DimensionsLabel" parent="@style/TextAppearance.App.Caption1.Accent">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="App.Widget.WorkSmall.WorkTitle" parent="@style/TextAppearance.App.Caption">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">@dimen/work_line_spacing_extra</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="window_light_status_bar_for_app_theme">true</bool>
+    <bool name="window_light_navigation_bar_for_app_theme">true</bool>
+    <bool name="is_tablet">false</bool>
+</resources>

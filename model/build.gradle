@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+
+android {
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        compileSdk rootProject.ext.targetSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    lint {
+        abortOnError false
+        checkTestSources true
+        xmlReport true
+    }
+    namespace 'com.example.flux.model'
+}
+
+dependencies {
+    implementation project(path: ':shared')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycleViewmodelSavedstateVersion"
+
+    implementation "com.google.android.material:material:$materialVersion"
+
+    // compose
+    implementation(platform("androidx.compose:compose-bom:$composeBomVersion"))
+    implementation("androidx.compose.runtime:runtime")
+
+    // util
+    implementation "com.google.code.gson:gson:$gsonVersion"
+    implementation "com.jakewharton.timber:timber:$timberVersion"
+}

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">@color/white</color>
+    <color name="color_primary_dark">@color/black</color>
+    <color name="color_accent">@color/black</color>
+
+    <color name="text_color">@color/black</color>
+    <color name="text_color_primary">@color/black</color>
+    <color name="text_color_reverse">@color/white</color>
+    <color name="text_color_secondary">@color/black</color>
+    <color name="text_color_description">@color/black_333333</color>
+    <color name="text_color_accent">@color/gray_888888</color>
+    <color name="text_color_accent_dark">@color/gray_cccccc</color>
+    <color name="text_color_light">@color/black_20percent</color>
+    <color name="text_color_sticker_black">@color/black</color>
+    <color name="text_color_event_term_coming_soon">@color/black</color>
+    <color name="text_color_caution">@color/red_ff0000</color>
+    <color name="text_color_follow_off">@color/color_primary_dark</color>
+    <color name="text_color_follow_on">@color/color_primary</color>
+    <color name="text_color_ticket_term">@color/red_ff4f59</color>
+    <color name="text_color_event_term_ended">@color/black</color>
+
+    <color name="color_border">@color/gray_e5e5e5</color>
+    <color name="color_border_dialog">@color/gray_e5e5e5</color>
+    <color name="color_card_background">@color/gray_eeeeee</color>
+    <color name="color_card_layout">@color/transparent</color>
+    <color name="color_card_layout_dark">@color/black</color>
+    <color name="color_card_layout_filled">@color/white</color>
+    <color name="color_card_overlay_layout">@color/white</color>
+    <color name="color_card_overlay_layout_dark">@color/black</color>
+    <color name="color_card_layout_unread">@color/gray_eeeeee</color>
+    <color name="color_card_stamp_rally">@color/white</color>
+    <color name="color_button_surface_dark">@color/black</color>
+    <color name="color_fab_layout">@color/white</color>
+    <color name="color_fab_layout_dark">@color/black</color>
+    <color name="color_app_bar_layout">@color/white</color>
+    <color name="color_tab_layout">@color/white</color>
+    <color name="color_bottom_navigation_view">@color/white</color>
+    <color name="color_dialog">@color/white</color>
+    <color name="color_dialog_dark">@color/black</color>
+    <color name="color_follow_off_background">@color/color_primary</color>
+    <color name="color_follow_on_background">@color/gray_e5e5e5</color>
+    <color name="color_horizontal_sticker_view_base">@color/gray_e5e5e5</color>
+    <color name="color_artist_detail_background">@color/black_1a1a1a</color>
+    <color name="color_editor_background">@color/black_1a1a1a</color>
+    <color name="color_player_collapsed_background">@color/gray_f5f5f5</color>
+    <color name="color_audio_guide_card_background">@color/gray_eeeeee</color>
+    <color name="color_ripple_primary">@color/gray_888888</color>
+    <color name="color_ripple_secondary">@color/white</color>
+
+    <!--KeyColors-->
+
+    <color name="transparent">#00000000</color>
+
+    <!--Black-->
+    <color name="black">@android:color/black</color>
+    <color name="black_20percent">#33000000</color>
+    <color name="black_333333">#333333</color>
+    <color name="black_1a1a1a">#1a1a1a</color>
+
+    <!--White-->
+    <color name="white">@android:color/white</color>
+    <color name="white_30percent">#4dffffff</color>
+
+    <!--Gray-->
+    <color name="gray_888888">#888888</color>
+    <color name="gray_cccccc">#cccccc</color>
+    <color name="gray_e5e5e5">#e5e5e5</color>
+    <color name="gray_eeeeee">#eeeeee</color>
+    <color name="gray_f5f5f5">#f5f5f5</color>
+
+    <!--Red-->
+    <color name="red_ff4f59">#ff4f59</color>
+
+    <!--Blue-->
+    <color name="blue_5baca6">#5baca6</color>
+
+    <!--Green-->
+
+    <!--Yellow-->
+
+    <!-- dropshadow black -->
+
+    <!-- ripple color -->
+    <color name="red_ff0000">#ff0000</color>
+
+    <!-- Material Colors-->
+
+    <!-- Black -->
+    <color name="black_01dp">#1a1a1a</color>
+    <color name="black_03dp">#202020</color>
+    <color name="black_04dp">#242424</color>
+    <color name="black_05dp">#282828</color>
+    <color name="black_06dp">#383838</color>
+    <color name="black_08dp">#484848</color>
+    <color name="black_12dp">#585858</color>
+    <color name="black_16dp">#686868</color>
+    <color name="black_24dp">#787878</color>
+
+</resources>
+
+
+    <!--
+     100% — FF
+     99% — FC
+     98% — FA
+     97% — F7
+     96% — F5
+     95% — F2
+     94% — F0
+     93% — ED
+     92% — EB
+     91% — E8
+     90% — E6
+     89% — E3
+     88% — E0
+     87% — DE
+     86% — DB
+     85% — D9
+     84% — D6
+     83% — D4
+     82% — D1
+     81% — CF
+     80% — CC
+     79% — C9
+     78% — C7
+     77% — C4
+     76% — C2
+     75% — BF
+     74% — BD
+     73% — BA
+     72% — B8
+     71% — B5
+     70% — B3
+     69% — B0
+     68% — AD
+     67% — AB
+     66% — A8
+     65% — A6
+     64% — A3
+     63% — A1
+     62% — 9E
+     61% — 9C
+     60% — 99
+     59% — 96
+     58% — 94
+     57% — 91
+     56% — 8F
+     55% — 8C
+     54% — 8A
+     53% — 87
+     52% — 85
+     51% — 82
+     50% — 80
+     49% — 7D
+     48% — 7A
+     47% — 78
+     46% — 75
+     45% — 73
+     44% — 70
+     43% — 6E
+     42% — 6B
+     41% — 69
+     40% — 66
+     39% — 63
+     38% — 61
+     37% — 5E
+     36% — 5C
+     35% — 59
+     34% — 57
+     33% — 54
+     32% — 52
+     31% — 4F
+     30% — 4D
+     29% — 4A
+     28% — 47
+     27% — 45
+     26% — 42
+     25% — 40
+     24% — 3D
+     23% — 3B
+     22% — 38
+     21% — 36
+     20% — 33
+     19% — 30
+     18% — 2E
+     17% — 2B
+     16% — 29
+     15% — 26
+     14% — 24
+     13% — 21
+     12% — 1F
+     11% — 1C
+     10% — 1A
+      9% — 17
+      8% — 14
+      7% — 12
+      6% — 0F
+      5% — 0D
+      4% — 0A
+      3% — 08
+      2% — 05
+      1% — 03
+      0% — 00
+      -->

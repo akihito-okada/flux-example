@@ -1,0 +1,193 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- see https://github.com/material-components/material-components-android/blob/2997b6995f32bbd7f7a4f24f4030278a50c15e6f/docs/theming/Typography.md -->
+
+    <!-- NotoSansCjk Medium 48dp -->
+    <style name="TextAppearance.App.Headline2.Sp" tools:keep="@style/TextAppearance_App_Headline2_Sp">
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 48dp -->
+    <style name="TextAppearance.App.Headline3.Sp" tools:keep="@style/TextAppearance_App_Headline3_Sp">
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 38dp -->
+    <style name="TextAppearance.App.Headline3.8.Sp" tools:keep="@style/TextAppearance_App_Headline3_8_Sp">
+        <item name="android:textSize">38sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 34dp -->
+    <style name="TextAppearance.App.Headline4.Sp" tools:keep="@style/TextAppearance_App_Headline4_Sp">
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 28dp -->
+    <style name="TextAppearance.App.Headline4.6.Sp" tools:keep="@style/TextAppearance_App_Headline4_6_Sp">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 26dp -->
+    <style name="TextAppearance.App.Headline4.8.Sp" tools:keep="@style/TextAppearance_App_Headline4_8_Sp">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 24dp -->
+    <style name="TextAppearance.App.Headline5.Sp" tools:keep="@style/TextAppearance_App_Headline5_Sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 20dp -->
+    <style name="TextAppearance.App.Headline6.Sp" tools:keep="@style/TextAppearance_App_Headline6_Sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 18dp -->
+    <style name="TextAppearance.App.Headline7.Sp" tools:keep="@style/TextAppearance_App_Headline7_Sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 16dp -->
+    <style name="TextAppearance.App.Subtitle1.Sp" tools:keep="@style/TextAppearance_App_Subtitle1_Sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 14dp -->
+    <style name="TextAppearance.App.Subtitle2.Sp" tools:keep="@style/TextAppearance_App_Subtitle2_Sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 12dp -->
+    <style name="TextAppearance.App.Subtitle3.Sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 10dp -->
+    <style name="TextAppearance.App.Subtitle4.Sp" tools:keep="@style/TextAppearance_App_Subtitle4_Sp">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 16dp -->
+    <style name="TextAppearance.App.Body1.Sp" tools:keep="@style/TextAppearance_App_Body1_Sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 14dp -->
+    <style name="TextAppearance.App.Body2.Sp" tools:keep="@style/TextAppearance_App_Body2_Sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 12dp -->
+    <style name="TextAppearance.App.Caption.Sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 10dp -->
+    <style name="TextAppearance.App.Caption1.Sp" tools:keep="@style/TextAppearance_App_Caption1_Sp">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 8dp -->
+    <style name="TextAppearance.App.Caption2.Sp" tools:keep="@style/TextAppearance_App_Caption2_Sp">
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 12dp -->
+    <style name="TextAppearance.App.Overline.Sp" tools:keep="@style/TextAppearance_App_Overline_Sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- NotoSansCjk Bold 26dp -->
+    <style name="TextAppearance.App.Headline5.Bold.Sp" tools:keep="@style/TextAppearance_App_Headline5_Bold_Sp">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <!-- NotoSansCjk Bold 12dp -->
+    <style name="TextAppearance.App.Subtitle3.Bold.Sp" tools:keep="@style/TextAppearance_App_Subtitle3_Bold_Sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 48dp -->
+    <style name="TextAppearance.App.Headline2.Sp.Accent" tools:keep="@style/TextAppearance_App_Headline2_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 48dp -->
+    <style name="TextAppearance.App.Headline3.Sp.Accent" tools:keep="@style/TextAppearance_App_Headline3_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 34dp -->
+    <style name="TextAppearance.App.Headline4.Sp.Accent" tools:keep="@style/TextAppearance_App_Headline4_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 24dp -->
+    <style name="TextAppearance.App.Headline5.Sp.Accent" tools:keep="@style/TextAppearance_App_Headline5_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 20dp -->
+    <style name="TextAppearance.App.Headline6.Sp.Accent" tools:keep="@style/TextAppearance_App_Headline6_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 18dp -->
+    <style name="TextAppearance.App.Headline7.Sp.Accent" tools:keep="@style/TextAppearance_App_Headline7_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 16dp -->
+    <style name="TextAppearance.App.Subtitle1.Sp.Accent" tools:keep="@style/TextAppearance_App_Subtitle1_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 14dp -->
+    <style name="TextAppearance.App.Subtitle2.Sp.Accent" tools:keep="@style/TextAppearance_App_Subtitle2_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 12dp -->
+    <style name="TextAppearance.App.Subtitle3.Sp.Accent" tools:keep="@style/TextAppearance_App_Subtitle3_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 10dp -->
+    <style name="TextAppearance.App.Subtitle4.Sp.Accent" tools:keep="@style/TextAppearance_App_Subtitle4_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 16dp -->
+    <style name="TextAppearance.App.Body1.Sp.Accent" tools:keep="@style/TextAppearance_App_Body1_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 14dp -->
+    <style name="TextAppearance.App.Body2.Sp.Accent" tools:keep="@style/TextAppearance_App_Body2_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 12dp -->
+    <style name="TextAppearance.App.Caption.Sp.Accent" tools:keep="@style/TextAppearance_App_Caption_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 10dp -->
+    <style name="TextAppearance.App.Caption1.Sp.Accent" tools:keep="@style/TextAppearance_App_Caption1_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 8dp -->
+    <style name="TextAppearance.App.Caption2.Sp.Accent" tools:keep="@style/TextAppearance_App_Caption2_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 12dp -->
+    <style name="TextAppearance.App.Overline.Sp.Accent" tools:keep="@style/TextAppearance_App_Overline_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Bold 26dp -->
+    <style name="TextAppearance.App.Headline5.Bold.Sp.Accent" tools:keep="@style/TextAppearance_App_Headline5_Bold_Sp_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+</resources>

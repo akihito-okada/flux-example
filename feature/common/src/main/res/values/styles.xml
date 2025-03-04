@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="App.Widget" parent="" />
+
+    <style name="App.Widget.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/colorBottomNavigationView</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="elevation">0dp</item>
+        <item name="itemIconTint">?attr/colorPrimaryDark</item>
+        <item name="itemTextColor">@color/color_bottom_navigation_view_text_color</item>
+        <item name="itemTextAppearanceActive">@style/App.Widget.BottomNavigationView.Text</item>
+        <item name="itemTextAppearanceInactive">@style/App.Widget.BottomNavigationView.Text</item>
+    </style>
+
+    <style name="BaseBottomNavigationViewTextV21">
+        <item name="android:textSize" tools:ignore="SpUsage">10dp</item>
+    </style>
+
+    <style name="App.Widget.BottomNavigationView.Text" parent="@style/BaseBottomNavigationViewTextV21" />
+
+    <style name="App.Widget.AppBarLayout" parent="Widget.MaterialComponents.AppBarLayout.Primary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/colorAppBarLayout</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="App.Widget.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="titleTextAppearance">@style/TextAppearance.App.Headline6</item>
+    </style>
+
+    <style name="BaseMaterialButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textAppearance">@style/TextAppearance.App.Subtitle1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">25dp</item>
+        <item name="rippleColor">?attr/colorRipplePrimary</item>
+    </style>
+
+    <style name="App.Widget.MaterialButton" parent="BaseMaterialButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:backgroundTint">?attr/colorCardLayoutFilled</item>
+        <item name="android:textColor">?attr/colorPrimaryDark</item>
+        <item name="rippleColor">?attr/colorRippleSecondary</item>
+    </style>
+
+    <!-- radius 30dp -->
+
+    <style name="App.Widget.MaterialButton.White" parent="BaseMaterialButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="rippleColor">@color/gray_888888</item>
+    </style>
+
+    <style name="App.Widget.MaterialButton.Red" parent="BaseMaterialButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:backgroundTint">@color/red_ff4f59</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="rippleColor">@color/gray_888888</item>
+    </style>
+
+    <style name="App.Widget.MaterialButton.White.Outlined">
+        <item name="strokeColor">?attr/colorBorder</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="App.Widget.MaterialAlertDialog.Message" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/blue_5baca6</item>
+    </style>
+
+    <style name="App.Widget.RecyclerView" parent="">
+        <item name="android:background">?attr/colorCardLayoutFilled</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingBottom">70dp</item>
+    </style>
+
+    <style name="App.Widget.Border.FullWidth" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?attr/colorBorder</item>
+    </style>
+
+    <style name="App.Widget.Dialog.Title" parent="@style/TextAppearance.App.Subtitle2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="App.Widget.Dialog.Message" parent="@style/TextAppearance.App.Caption">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+    <style name="App.Widget.BottomSheetDialog.Rounded" parent="BaseBottomSheetDialog">
+        <item name="bottomSheetStyle">@style/RoundedBottomSheet</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+    </style>
+
+    <style name="RoundedBottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/shape_rounded_bottom_sheet_dialog</item>
+    </style>
+
+    <style name="App.Widget.CardLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="App.Widget.EmptyViewTitle" parent="@style/TextAppearance.App.Headline5">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="App.Widget.EmptyViewMessage" parent="@style/TextAppearance.App.Body2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="App.Widget.EmptyViewActionButton" parent="@style/TextAppearance.App.Subtitle2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">?attr/colorOnAttentionSuccess</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+</resources>

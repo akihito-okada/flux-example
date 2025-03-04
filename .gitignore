@@ -1,0 +1,99 @@
+# built application files
+*.apk
+*.aab
+*.ap_
+ 
+# files for the dex VM
+*.dex
+ 
+# Java class files
+*.class
+ 
+# generated files
+bin/
+gen/
+ 
+# Local configuration file (sdk path, etc)
+local.properties
+ 
+# eclipse settings
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+ 
+# External tool builders
+.externalToolBuilders/
+ 
+# Locally stored "Eclipse launch configurations"
+*.launch
+ 
+# CDT-specific
+.cproject
+ 
+# PDT-specific
+.buildpath
+ 
+# Intellij
+*.iml
+*.ipr
+*.iws
+.idea/*.sh
+.idea/libraries/
+.idea/caches/
+.idea/codeStyles/
+.idea/dictionaries/
+.idea/gradle.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/render.experimental.xml
+.idea/runConfigurations.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/assetWizardSettings.xml
+.idea/encodings.xml
+.idea/kotlinc.xml
+.idea/markdown-navigator-enh.xml
+.idea/markdown-navigator.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/inspectionProfiles
+.idea/deploymentTargetDropDown.xml
+.idea/migrations.xml
+.idea/appInsightsSettings.xml
+.idea/deploymentTargetSelector.xml
+.idea/studiobot.xml
+
+# Android Studio
+.gradle/
+build/
+*.iml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Other
+.DS_Store
+.bundle
+.externalNativeBuild
+vendor/
+captures/
+class_files.txt
+mapping.txt
+seeds.txt
+unused.txt
+*.orig
+output.json

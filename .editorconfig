@@ -1,0 +1,18 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+
+[*.xml]
+insert_final_newline=true
+
+[*.java]
+insert_final_newline=true
+
+[*.{kt,kts}]
+insert_final_newline=true
+max_line_length=200
+ij_kotlin_allow_trailing_comma_on_call_site=true
+ij_kotlin_allow_trailing_comma=true

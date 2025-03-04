@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'com.google.devtools.ksp'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        compileSdk rootProject.ext.targetSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    lint {
+        abortOnError false
+        checkTestSources true
+        xmlReport true
+    }
+    namespace 'com.example.flux.preferences'
+}
+
+dependencies {
+    implementation project(path: ':shared')
+    implementation project(path: ':model')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+
+    // androidx
+    implementation "androidx.core:core-ktx:$coreKtxVersion"
+    implementation "androidx.annotation:annotation:$annotationVersion"
+
+    // di
+    implementation "com.google.dagger:hilt-android:$hiltAndroidVersion"
+    ksp "com.google.dagger:hilt-android-compiler:$hiltAndroidVersion"
+    implementation "androidx.hilt:hilt-common:$hiltVersion"
+    ksp "androidx.hilt:hilt-compiler:$hiltVersion"
+
+    // util
+    implementation "com.jakewharton.timber:timber:$timberVersion"
+}

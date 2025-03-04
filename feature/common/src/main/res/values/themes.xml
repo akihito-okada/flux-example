@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseAppThemeV21" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+
+        <item name="bottomNavigationStyle">@style/App.Widget.BottomNavigationView</item>
+        <item name="android:colorBackground">@color/color_primary</item>
+        <item name="android:windowBackground">@color/color_primary</item>
+        <item name="android:colorEdgeEffect">@color/color_primary_dark</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorSecondary">@color/text_color_secondary</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:colorControlNormal">@color/text_color_secondary</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="windowLightStatusBarForAppTheme">@bool/window_light_status_bar_for_app_theme</item>
+        <item name="windowLightNavigationBarForAppTheme">@bool/window_light_navigation_bar_for_app_theme</item>
+
+        <item name="textColor">@color/text_color</item>
+        <item name="textColorPrimary">@color/text_color_primary</item>
+        <item name="textColorSecondary">@color/text_color_secondary</item>
+        <item name="textColorReverse">@color/text_color_reverse</item>
+        <item name="textColorAccent">@color/text_color_accent</item>
+        <item name="textColorAccentDark">@color/text_color_accent_dark</item>
+        <item name="textColorLight">@color/text_color_light</item>
+        <item name="textColorDescription">@color/text_color_description</item>
+        <item name="textColorStickerBlack">@color/text_color_sticker_black</item>
+        <item name="textColorEventTermComingSoon">@color/text_color_event_term_coming_soon</item>
+        <item name="textColorEventTermEnded">@color/text_color_event_term_ended</item>
+        <item name="textColorFollowOff">@color/text_color_follow_off</item>
+        <item name="textColorFollowOn">@color/text_color_follow_on</item>
+        <item name="textColorTicketTerm">@color/text_color_ticket_term</item>
+        <item name="textColorEmphasized">@color/red_ff4f59</item>
+        <item name="textColorCaution">@color/text_color_caution</item>
+        <item name="textColorPrimaryStampRally">@color/black</item>
+
+        <item name="colorBorder">@color/color_border</item>
+        <item name="colorBorderDialog">@color/color_border_dialog</item>
+        <item name="colorCardBackground">@color/color_card_background</item>
+        <item name="colorCardLayout">@color/color_card_layout</item>
+        <item name="colorCardLayoutDark">@color/color_card_layout_dark</item>
+        <item name="colorCardLayoutFilled">@color/color_card_layout_filled</item>
+        <item name="colorCardLayoutStampRally">@color/color_card_stamp_rally</item>
+        <item name="colorCardOverlayLayout">@color/color_card_overlay_layout</item>
+        <item name="colorCardOverlayLayoutDark">@color/color_card_overlay_layout_dark</item>
+        <item name="colorCardLayoutUnread">@color/color_card_layout_unread</item>
+        <item name="colorButtonSurfaceDark">@color/color_button_surface_dark</item>
+        <item name="colorFabLayout">@color/color_fab_layout</item>
+        <item name="colorFabLayoutDark">@color/color_fab_layout_dark</item>
+        <item name="colorAppBarLayout">@color/color_app_bar_layout</item>
+        <item name="colorTabLayout">@color/color_tab_layout</item>
+        <item name="colorBottomNavigationView">@color/color_bottom_navigation_view</item>
+        <item name="colorDialog">@color/color_dialog</item>
+        <item name="colorDialogDark">@color/color_dialog_dark</item>
+        <item name="colorFollowOffBackground">@color/color_follow_off_background</item>
+        <item name="colorFollowOnBackground">@color/color_follow_on_background</item>
+        <item name="colorHorizontalStickerViewBase">@color/color_horizontal_sticker_view_base</item>
+        <item name="colorArtistDetailBackground">@color/color_artist_detail_background</item>
+        <item name="colorEditorBackground">@color/color_editor_background</item>
+        <item name="colorPlayerCollapsedBackground">@color/color_player_collapsed_background</item>
+        <item name="colorAudioGuideCardBackground">@color/color_audio_guide_card_background</item>
+        <item name="colorRipplePrimary">@color/color_ripple_primary</item>
+        <item name="colorRippleSecondary">@color/color_ripple_secondary</item>
+        <item name="colorAttentionInfo">@color/red_ff4f59</item>
+        <item name="colorOnAttentionInfo">@color/white</item>
+        <item name="colorAttentionSuccess">@color/blue_5baca6</item>
+        <item name="colorOnAttentionSuccess">@color/blue_5baca6</item>
+        <item name="colorOnSurfaceDeep">@color/gray_888888</item>
+
+        <item name="bottomSheetDialogTheme">@style/App.Widget.BottomSheetDialog.Rounded</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/BaseAppThemeV21" />
+
+    <style name="AppTheme.Dark" parent="@style/AppTheme">
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+</resources>

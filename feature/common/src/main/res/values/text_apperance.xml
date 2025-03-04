@@ -1,0 +1,362 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- see https://github.com/material-components/material-components-android/blob/2997b6995f32bbd7f7a4f24f4030278a50c15e6f/docs/theming/Typography.md -->
+
+    <!-- NotoSansCjk Medium 48dp -->
+    <style name="TextAppearance.App.Headline2" parent="TextAppearance.MaterialComponents.Headline2" tools:keep="@style/TextAppearance_App_Headline2">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">60dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 48dp -->
+    <style name="TextAppearance.App.Headline3" parent="TextAppearance.MaterialComponents.Headline3" tools:keep="@style/TextAppearance_App_Headline3">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">48dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 38dp -->
+    <style name="TextAppearance.App.Headline3.8" parent="TextAppearance.MaterialComponents.Headline5" tools:keep="@style/TextAppearance_App_Headline3_8">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">38dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 34dp -->
+    <style name="TextAppearance.App.Headline4" parent="TextAppearance.MaterialComponents.Headline4" tools:keep="@style/TextAppearance_App_Headline4">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">34dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 32dp -->
+    <style name="TextAppearance.App.Headline4.4" parent="TextAppearance.MaterialComponents.Headline4" tools:keep="@style/TextAppearance_App_Headline4_4">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">32dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 28dp -->
+    <style name="TextAppearance.App.Headline4.6" parent="TextAppearance.MaterialComponents.Headline5" tools:keep="@style/TextAppearance_App_Headline4_6">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">28dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 26dp -->
+    <style name="TextAppearance.App.Headline4.8" parent="TextAppearance.MaterialComponents.Headline5" tools:keep="@style/TextAppearance_App_Headline4_8">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">26dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 24dp -->
+    <style name="TextAppearance.App.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">24dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 20dp -->
+    <style name="TextAppearance.App.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">20dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 18dp -->
+    <style name="TextAppearance.App.Headline7" parent="TextAppearance.MaterialComponents.Headline6" tools:keep="@style/TextAppearance_App_Headline7">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">18dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 16dp -->
+    <style name="TextAppearance.App.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 14dp -->
+    <style name="TextAppearance.App.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 12dp -->
+    <style name="TextAppearance.App.Subtitle3" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 10dp -->
+    <style name="TextAppearance.App.Subtitle4" parent="TextAppearance.MaterialComponents.Subtitle2" tools:keep="@style/TextAppearance_App_Subtitle4">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">10dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 16dp -->
+    <style name="TextAppearance.App.Body1" parent="TextAppearance.MaterialComponents.Body1" tools:keep="@style/TextAppearance_App_Body1">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 14dp -->
+    <style name="TextAppearance.App.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 12dp -->
+    <style name="TextAppearance.App.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 10dp -->
+    <style name="TextAppearance.App.Caption1" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">10dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 8dp -->
+    <style name="TextAppearance.App.Caption2" parent="TextAppearance.MaterialComponents.Caption" tools:keep="@style/TextAppearance_App_Caption2">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">8dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 12dp -->
+    <style name="TextAppearance.App.Overline" parent="TextAppearance.MaterialComponents.Overline" tools:keep="@style/TextAppearance_App_Overline">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+    </style>
+
+    <!-- NotoSansCjk Bold 26dp -->
+    <style name="TextAppearance.App.Headline5.Bold" parent="TextAppearance.MaterialComponents.Headline6" tools:keep="@style/TextAppearance_App_Headline5_Bold">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">26dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+    </style>
+
+    <!-- NotoSansCjk Bold 12dp -->
+    <style name="TextAppearance.App.Subtitle3.Bold" parent="TextAppearance.MaterialComponents.Subtitle2" tools:keep="@style/TextAppearance_App_Subtitle3_Bold">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">@dimen/default_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.App.Caption.Maps.Cluster" parent="TextAppearance.App.Caption" tools:keep="@style/TextAppearance_App_Caption_Maps_Cluster">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 48dp -->
+    <style name="TextAppearance.App.Headline2.Accent" parent="TextAppearance.App.Headline2" tools:keep="@style/TextAppearance_App_Headline2_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 48dp -->
+    <style name="TextAppearance.App.Headline3.Accent" parent="TextAppearance.App.Headline3" tools:keep="@style/TextAppearance_App_Headline3_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 34dp -->
+    <style name="TextAppearance.App.Headline4.Accent" parent="TextAppearance.App.Headline4" tools:keep="@style/TextAppearance_App_Headline4_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 24dp -->
+    <style name="TextAppearance.App.Headline5.Accent" parent="TextAppearance.App.Headline5" tools:keep="@style/TextAppearance_App_Headline5_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 20dp -->
+    <style name="TextAppearance.App.Headline6.Accent" parent="TextAppearance.App.Headline6" tools:keep="@style/TextAppearance_App_Headline6_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 18dp -->
+    <style name="TextAppearance.App.Headline7.Accent" parent="TextAppearance.App.Headline7" tools:keep="@style/TextAppearance_App_Headline7_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 16dp -->
+    <style name="TextAppearance.App.Subtitle1.Accent" parent="TextAppearance.App.Subtitle1" tools:keep="@style/TextAppearance_App_Subtitle1_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 14dp -->
+    <style name="TextAppearance.App.Subtitle2.Accent" parent="TextAppearance.App.Subtitle2" tools:keep="@style/TextAppearance_App_Subtitle2_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 12dp -->
+    <style name="TextAppearance.App.Subtitle3.Accent" parent="TextAppearance.App.Subtitle3" tools:keep="@style/TextAppearance_App_Subtitle3_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Medium 10dp -->
+    <style name="TextAppearance.App.Subtitle4.Accent" parent="TextAppearance.App.Subtitle4" tools:keep="@style/TextAppearance_App_Subtitle4_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 16dp -->
+    <style name="TextAppearance.App.Body1.Accent" parent="TextAppearance.App.Body1" tools:keep="@style/TextAppearance_App_Body1_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 14dp -->
+    <style name="TextAppearance.App.Body2.Accent" parent="TextAppearance.App.Body2" tools:keep="@style/TextAppearance_App_Body2_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 12dp -->
+    <style name="TextAppearance.App.Caption.Accent" parent="TextAppearance.App.Caption" tools:keep="@style/TextAppearance_App_Caption_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 10dp -->
+    <style name="TextAppearance.App.Caption1.Accent" parent="TextAppearance.App.Caption1">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 8dp -->
+    <style name="TextAppearance.App.Caption2.Accent" parent="TextAppearance.App.Caption2" tools:keep="@style/TextAppearance_App_Caption2_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Regular 12dp -->
+    <style name="TextAppearance.App.Overline.Accent" parent="TextAppearance.App.Overline" tools:keep="@style/TextAppearance_App_Overline_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- NotoSansCjk Bold 26dp -->
+    <style name="TextAppearance.App.Headline5.Bold.Accent" parent="TextAppearance.App.Headline5.Bold" tools:keep="@style/TextAppearance_App_Headline5_Bold_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- Akademie-Light 24dp -->
+    <style name="TextAppearance.App.Headline5.Eng.Light" parent="TextAppearance.MaterialComponents.Headline5" tools:keep="@style/TextAppearance_App_Headline5_Eng_Light">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">24dp</item>
+    </style>
+
+    <!-- Akademie-Light 16dp -->
+    <style name="TextAppearance.App.Body1.Eng.Light" parent="TextAppearance.MaterialComponents.Body1" tools:keep="@style/TextAppearance_App_Body1_Eng_Light">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
+    </style>
+
+    <!-- Akademie-Light 14dp -->
+    <style name="TextAppearance.App.Body2.Eng.Light" parent="TextAppearance.MaterialComponents.Body2" tools:keep="@style/TextAppearance_App_Body2_Eng_Light">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+    </style>
+
+    <!-- Akademie-Light 12dp -->
+    <style name="TextAppearance.App.Caption.Eng.Light" parent="TextAppearance.MaterialComponents.Caption" tools:keep="@style/TextAppearance_App_Caption_Eng_Light">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+    </style>
+
+    <!-- Akademie-Light 10dp -->
+    <style name="TextAppearance.App.Caption1.Eng.Light" parent="TextAppearance.MaterialComponents.Caption" tools:keep="@style/TextAppearance_App_Caption1_Eng_Light">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">10dp</item>
+    </style>
+
+    <!-- Akademie-Light-Italic 16dp -->
+    <style name="TextAppearance.App.Body1.Eng.Light.Italic" parent="TextAppearance.MaterialComponents.Body1" tools:keep="@style/TextAppearance_App_Body1_Eng_Light_Italic">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
+    </style>
+
+    <!-- Akademie-Light-Italic 14dp -->
+    <style name="TextAppearance.App.Body2.Eng.Light.Italic" parent="TextAppearance.MaterialComponents.Body2" tools:keep="@style/TextAppearance_App_Body2_Eng_Light_Italic">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+    </style>
+
+    <!-- Akademie-Light-Italic 12dp -->
+    <style name="TextAppearance.App.Caption.Eng.Light.Italic" parent="TextAppearance.MaterialComponents.Caption" tools:keep="@style/TextAppearance_App_Caption_Eng_Light_Italic">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+    </style>
+
+    <!-- Akademie-Light-Italic 10dp -->
+    <style name="TextAppearance.App.Caption1.Eng.Light.Italic" parent="TextAppearance.MaterialComponents.Caption" tools:keep="@style/TextAppearance_App_Caption1_Eng_Light_Italic">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">10dp</item>
+    </style>
+
+    <!-- Akademie-Light 24dp -->
+    <style name="TextAppearance.App.Headline5.Eng.Light.Accent" parent="TextAppearance.App.Headline5.Eng.Light" tools:keep="@style/TextAppearance_App_Headline5_Eng_Light_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- Akademie-Light 16dp -->
+    <style name="TextAppearance.App.Body1.Eng.Light.Accent" parent="TextAppearance.App.Body1.Eng.Light" tools:keep="@style/TextAppearance_App_Body1_Eng_Light_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- Akademie-Light 14dp -->
+    <style name="TextAppearance.App.Body2.Eng.Light.Accent" parent="TextAppearance.App.Body2.Eng.Light" tools:keep="@style/TextAppearance_App_Body2_Eng_Light_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- Akademie-Light 12dp -->
+    <style name="TextAppearance.App.Caption.Eng.Light.Accent" parent="TextAppearance.App.Caption.Eng.Light" tools:keep="@style/TextAppearance_App_Caption_Eng_Light_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- Akademie-Light 10dp -->
+    <style name="TextAppearance.App.Caption1.Eng.Light.Accent" parent="TextAppearance.App.Caption1.Eng.Light" tools:keep="@style/TextAppearance_App_Caption1_Eng_Light_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- Akademie-Light-Italic 16dp -->
+    <style name="TextAppearance.App.Body1.Eng.Light.Italic.Accent" parent="TextAppearance.App.Body1.Eng.Light.Italic" tools:keep="@style/TextAppearance_App_Body1_Eng_Light_Italic_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- Akademie-Light-Italic 14dp -->
+    <style name="TextAppearance.App.Body2.Eng.Light.Italic.Accent" parent="TextAppearance.App.Body2.Eng.Light.Italic" tools:keep="@style/TextAppearance_App_Body2_Eng_Light_Italic_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- Akademie-Light-Italic 12dp -->
+    <style name="TextAppearance.App.Caption.Eng.Light.Italic.Accent" parent="TextAppearance.App.Caption.Eng.Light.Italic" tools:keep="@style/TextAppearance_App_Caption_Eng_Light_Italic_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+    <!-- Akademie-Light-Italic 10dp -->
+    <style name="TextAppearance.App.Caption1.Eng.Light.Italic.Accent" parent="TextAppearance.App.Caption1.Eng.Light.Italic" tools:keep="@style/TextAppearance_App_Caption1_Eng_Light_Italic_Accent">
+        <item name="android:textColor">?attr/textColorAccent</item>
+    </style>
+
+</resources>

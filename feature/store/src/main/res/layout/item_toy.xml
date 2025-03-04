@@ -1,0 +1,82 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+    android:paddingHorizontal="8dp">
+
+    <View
+        android:id="@+id/card"
+        style="@style/App.Widget.CardLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/toy_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/price_label"
+        style="@style/App.Widget.WorkSmall.WorkPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dimensions"
+        app:layout_constraintWidth="true"
+        tools:text="¥ASK" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/toy_title"
+        style="@style/App.Widget.WorkSmall.WorkTitle"
+        app:layout_constraintEnd_toStartOf="@id/keep_barrier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toy_image"
+        tools:text="GenerationGapGeneration Gap Generation Gap" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/maker_name"
+        style="@style/App.Widget.WorkSmall.WorkArtistName"
+        app:layout_constraintEnd_toStartOf="@id/keep_barrier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toy_title"
+        tools:text="Mike Campau" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dimensions"
+        style="@style/App.Widget.WorkSmall.DimensionsLabel"
+        app:layout_constraintEnd_toStartOf="@id/keep_barrier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maker_name"
+        tools:text="Mike Campau" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/keep_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="keep_layout" />
+
+    <FrameLayout
+        android:id="@+id/keep_layout"
+        style="@style/App.Widget.Work.BottomKeepLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toy_image">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/save_button"
+            style="@style/App.Widget.Work.KeepButton" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

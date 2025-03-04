@@ -1,0 +1,47 @@
+@startuml
+agent shared
+agent model
+agent data_preferences
+agent data_remote
+agent data_repository
+agent feature_common
+agent feature_store
+agent feature_toys
+agent app
+
+app --> feature_store
+app --> feature_toys
+app ---> feature_common
+app ---> data_repository
+app ---> data_remote
+app ---> data_preferences
+app ---> model
+app ---> shared
+
+feature_store --> feature_common
+feature_toys --> feature_common
+
+feature_store --> data_repository
+feature_toys --> data_repository
+feature_common --> data_repository
+
+feature_store --> model
+feature_toys --> model
+feature_common --> model
+
+feature_store --> shared
+feature_toys --> shared
+feature_common --> shared
+
+data_repository --> data_remote
+data_repository --> data_preferences
+data_repository --> shared
+data_repository --> model
+
+data_remote --> data_preferences
+data_remote --> model
+data_remote --> shared
+data_preferences --> model
+data_preferences --> shared
+model --> shared
+@enduml

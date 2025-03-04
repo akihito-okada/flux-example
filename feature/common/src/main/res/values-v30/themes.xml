@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="BaseAppThemeV30" parent="@style/BaseAppThemeV27">
+        <item name="android:navigationBarDividerColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar">@null</item>
+        <item name="android:windowLightNavigationBar">@null</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/BaseAppThemeV30" />
+</resources>

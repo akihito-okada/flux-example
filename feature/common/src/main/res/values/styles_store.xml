@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="App.Widget.Store.ExtendedFloatingActionButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:minWidth">32dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Subtitle2</item>
+        <item name="android:text">@string/store_index_fab_search</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="backgroundTint">?attr/colorFabLayout</item>
+        <item name="iconPadding">12dp</item>
+        <item name="icon">@drawable/ic_search_filter_black_24dp</item>
+        <item name="iconTint">?attr/textColorPrimary</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+</resources>
