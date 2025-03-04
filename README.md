@@ -4,11 +4,9 @@
 
 ### **Flux**
 
-本プロジェクトでは、[DroidKaigi 2019](https://github.com/DroidKaigi/conference-app-2019) の Flux アーキテクチャを参考にしています。
-
+- Fluxアーキテクチャを採用しています。
 - **Action** は `Sealed Class` で管理。
 - **ActionCreator** から **Store** へのデータの受け渡しは `Dispatcher` を用いて `Coroutines Flow` で処理。
-- **Coroutines Flow** から **LiveData** への変換は `拡張関数` を使用。
 
 ### **Activity / Fragment**
 
@@ -133,4 +131,7 @@ Bitrise の `Push` ジョブで生成した `aab` を `Play Console` で時限�
 ```sh
 ./gradlew removeUnusedResources
 ```
+
+# References
+本プロジェクトでは、[DroidKaigi 2019](https://github.com/DroidKaigi/conference-app-2019) の Flux アーキテクチャを参考にしています。
 
